@@ -45,11 +45,6 @@ var Foo = function(options) {
   }
 
   this.update = function() {
-    //self.x += self.speedX;
-    //self.y += self.speedY;
-    //if (self.x >= windowWidth || self.x < 0) { self.speedX *= -1; }
-    //if (self.y >= windowHeight || self.y < 0) { self.speedY *= -1; }
-
     self.x += (Math.cos(self.direction) * self.speed);
     self.y -= (Math.sin(self.direction) * self.speed);
     if (self.x >= windowWidth || self.x < 0) {
